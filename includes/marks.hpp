@@ -10,7 +10,13 @@ public:
 
 struct Marks_store{
 public:
-    std::vector<Mark> marks;
+    std::vector<Mark> m_marks;
 public:
     Marks_store()=default;
+
+    void push(char * name, std::vector<Instance>::iterator it);
+
+    void push(char *name, Mark &mark);
+
+    void remove(char *name);
 };
