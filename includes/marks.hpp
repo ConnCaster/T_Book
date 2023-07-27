@@ -1,5 +1,7 @@
 #pragma once
-#include "t_book.hpp"
+
+#include "instance.hpp"
+
 struct Mark{
 public:
     char m_name[128];
@@ -14,9 +16,9 @@ public:
 public:
     Marks_store()=default;
 
-    void push(char * name, std::vector<Instance>::iterator it);
+    int push(char * name, std::vector<Instance>::iterator it);
 
-    void push(char *name, Mark &mark);
+    int exists(char * mark_name);
 
     void remove(char *name);
 };

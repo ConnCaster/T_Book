@@ -49,6 +49,13 @@ int main() {
 //    T_Book tb{};
 //    tb.append("qwe", "asd");
 //    tb.append("qwe", "89991234567");
-
+/*
+    std::vector<int> vec{1,2,3,4,5};
+    auto it = vec.begin();
+    auto it_last = vec.end() - 1;
+    it += 2;
+    vec.erase(vec.begin()+3);
+    std::cout << *it << " " << *it_last;
+*/
     return 0;
 }

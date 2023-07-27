@@ -14,3 +14,8 @@ void T_Book::append(const Instance& instance){
     m_book.push_back(instance);
     m_curr=m_book.end()-1;
 }
+
+int T_Book::set_mark (char *mark_name){
+    if(!marks_store.push(mark_name, m_curr)) return 0;
+    return 1;
+}
